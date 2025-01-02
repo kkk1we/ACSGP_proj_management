@@ -23565,3 +23565,15 @@ ul.iq-contact-rest li a p {
 
 .data-table .badge {
   padding: 8px 10px; }
+
+
+  /* for completed tasks in page-project.html */
+.completed-task {
+  opacity: 0.6; /* Grey out the task */
+  text-decoration: line-through; /* Strike-through the text */
+}
+
+.completed-task .badge {
+  background-color: #9c9c9c; /* Grey badge */
+  color: #fff; /* White text for better contrast */
+}
