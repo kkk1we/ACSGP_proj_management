@@ -23570,7 +23570,7 @@ ul.iq-contact-rest li a p {
   /* for completed tasks in page-project.html */
 .completed-task {
   opacity: 0.6; /* Grey out the task */
-  text-decoration: line-through; /* Strike-through the text */
+  text-decoration: line-through !important; /* Strike-through the text */
 }
 
 .completed-task .badge {
