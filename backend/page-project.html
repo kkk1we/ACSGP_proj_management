@@ -336,7 +336,143 @@
           </div>
       </div>      <div class="content-page">
      <div class="container-fluid">
-        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Tree</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .tree-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .tree-level {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border: 2px solid #6c757d;
+      border-radius: 10px;
+      background-color: #ffffff;
+      width: 90%;
+      position: relative;
+    }
+
+    .tree-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 30px;
+    }
+
+    .tree-node span {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #343a40;
+    }
+
+    .progress-bar {
+      width: 150px;
+      height: 15px;
+      background-color: #e9ecef;
+      border-radius: 7.5px;
+      overflow: hidden;
+    }
+
+    .progress-bar > div {
+      height: 100%;
+      background-color: #007bff;
+      width: 0;
+      transition: width 0.3s ease;
+    }
+
+    .arrow {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border-left: 4px solid #6c757d;
+      border-bottom: 4px solid #6c757d;
+      transform: rotate(-45deg);
+      margin: -20px 0 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="tree-container">
+    <!-- Level 1 -->
+    <div class="tree-level">
+      <div class="tree-node">
+        <span>Motion</span>
+        <div class="progress-bar">
+          <div style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="tree-node">
+        <span>OBE</span>
+        <div class="progress-bar">
+          <div style="width: 50%;"></div>
+        </div>
+      </div>
+      <div class="tree-node">
+        <span>Tread</span>
+        <div class="progress-bar">
+          <div style="width: 30%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="arrow"></div>
+
+    <!-- Level 2 -->
+    <div class="tree-level">
+      <div class="tree-node">
+        <span>Battery</span>
+        <div class="progress-bar">
+          <div style="width: 60%;"></div>
+        </div>
+      </div>
+      <div class="tree-node">
+        <span>Cell</span>
+        <div class="progress-bar">
+          <div style="width: 40%;"></div>
+        </div>
+      </div>
+      <div class="tree-node">
+        <span>Stick</span>
+        <div class="progress-bar">
+          <div style="width: 20%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="arrow"></div>
+
+    <!-- Level 3 -->
+    <div class="tree-level">
+      <div class="tree-node">
+        <span>Race Strategy</span>
+        <div class="progress-bar">
+          <div style="width: 0%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
         <div id="grid" class="item-content animate__animated animate__fadeIn active" data-toggle-extra="tab-content">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
