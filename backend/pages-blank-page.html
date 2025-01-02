@@ -722,34 +722,39 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
       background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
     }
 
     .tree-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      gap: 30px;
     }
 
     .tree-level {
       display: flex;
       align-items: center;
-      margin: 20px 0;
+      justify-content: center;
+      padding: 20px;
+      border: 2px solid #6c757d;
+      border-radius: 10px;
+      background-color: #ffffff;
+      width: 90%;
+      position: relative;
     }
 
     .tree-node {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0 40px;
-      text-align: center;
+      margin: 0 30px;
     }
 
     .tree-node span {
-      font-size: 1.5rem; /* Larger words */
+      font-size: 1.5rem;
       font-weight: bold;
       margin-bottom: 10px;
       color: #343a40;
@@ -761,31 +766,23 @@
       background-color: #e9ecef;
       border-radius: 7.5px;
       overflow: hidden;
-      margin: 5px 0;
     }
 
     .progress-bar > div {
       height: 100%;
       background-color: #007bff;
-      width: 0; /* Adjust this width for progress percentage */
+      width: 0;
       transition: width 0.3s ease;
     }
 
-    .connector {
-      height: 2px;
-      background-color: #6c757d;
-      margin: 0;
-      flex-grow: 1;
-    }
-
-    .tree-level:not(:last-child)::after {
-      content: '';
-      width: 100%;
-      height: 2px;
-      background-color: #6c757d;
-      position: absolute;
-      top: 50%;
-      z-index: -1;
+    .arrow {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border-left: 4px solid #6c757d;
+      border-bottom: 4px solid #6c757d;
+      transform: rotate(-45deg);
+      margin: -20px 0 0 0;
     }
   </style>
 </head>
@@ -813,6 +810,9 @@
       </div>
     </div>
 
+    <!-- Arrow -->
+    <div class="arrow"></div>
+
     <!-- Level 2 -->
     <div class="tree-level">
       <div class="tree-node">
@@ -835,6 +835,9 @@
       </div>
     </div>
 
+    <!-- Arrow -->
+    <div class="arrow"></div>
+
     <!-- Level 3 -->
     <div class="tree-level">
       <div class="tree-node">
@@ -847,6 +850,7 @@
   </div>
 </body>
 </html>
+
 
                 
             </div>
